@@ -1,0 +1,45 @@
+.main{
+    margin-top: 20px;
+}
+.card{
+    margin: 5px;
+}
+
+
+.electricidad-interior{
+    border: 2px solid red;
+}
+.agua-interior{
+    border: 2px solid blue;
+}
+
+.wrapper{
+    display: contents;
+}
+input{
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+}
+.btn{
+    width: 100%;
+}
+button{
+    margin: 5px;
+}
+.consumoInfo{
+    border: 2px solid red;
+    text-align: right;
+}
+
+thead{
+   text-align: center;
+}
+
+.row{
+    text-align: right;
+}
+
+@media (min-width:1024){
+    
+}

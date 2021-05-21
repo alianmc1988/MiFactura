@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <title>Mi Factura</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a href="#" class="navbar-brand">Brand</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link active">Home</a>
+                <a href="#" class="nav-item nav-link">Profile</a>
+                <a href="#" class="nav-item nav-link">Messages</a>
+                <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>
+            </div>
+            <div class="navbar-nav ml-auto">
+                <a href="#" class="nav-item nav-link">Login</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="container main">
+        <div class="main-wrapper row">
+            <!-- calculo de electricidad -->
+            <div class="electricidad  col-md-6">
+                <div class="electricidad-interior card">
+                    <!-- Form inputs for math electricidad -->
+                    <form action="submit">
+                        <h3>Electricidad</h3>
+                        <div class="card-body">
+                            <div class="wrapper container">
+                                <input type="number" name="" id="kwanterior" placeholder="Lectura Anterior">
+                                <input type="number" name="" id="kwactual" placeholder="Lectura Actual">
+                                <button class="btn btn-primary" type="submit">calcular</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="consumoInfo container">
+                        <label for=""> Cantidad de KW consumidos: <span id="cantkwconsumido">{_}</span></label><br>
+                        <label for=""> El total a pagar es de: <span id="importeelectricidad">{_}</span></label>
+                    </div>                   
+                   
+                </div>
+            </div>
+            
+             <!-- calculo de agua -->
+        <div class="agua  col-md-6">
+            <div class="agua-interior card">
+                <form action="submit">
+                    <h3>Agua</h3>
+                    <div class="card-body">
+                        <div class="wrapper container">
+                            <input type="number" name="" id="kwanterior" placeholder="Lectura Anterior">
+                            <input type="number" name="" id="kwactual" placeholder="Lectura Actual">
+                            <button class="btn btn-primary">calcular</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="consumoInfo container">
+                    <label for=""> Cantidad de M3 consumidos: <span id="cantaguaconsumido">{_}</span></label><br>
+                    <label for=""> El total a pagar es de: <span id="importeagua">{_}</span></label>
+                </div> 
+                
+            </div>
+            
+        </div>
+        </div>
+  
+</section>
+
+
+    
+    
+    <script src="./script.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- <A> -->
+  
+</body>
+</html>
