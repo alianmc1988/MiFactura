@@ -10,6 +10,7 @@ body{
 }
 .name-app{
     text-align: center;
+    margin-top: 20px;
 }
 h1{
     color: cornsilk;
@@ -23,7 +24,7 @@ h1{
     position: relative;
     background-color: rgba(246, 246, 246, 0.719);
     border-radius: 10px;
-    margin-top: 5vh;
+    margin-top: 2vh;
     box-shadow: 2px 2px 5px black;
     
 }
@@ -95,6 +96,11 @@ text-align: center;
 @media(min-width:1024px){
     .name-app{
         margin-top: 200px;
+    }
+    
+    .main-wrapper{
+        margin-top: 7vh;
+        
     }
     .inputs-wrapper{
         display: flex;
