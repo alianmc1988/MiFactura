@@ -1,45 +1,111 @@
-.main{
-    margin-top: 20px;
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(54,59,65,1) 100%);
+        
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.card{
-    margin: 5px;
+.name-app{
+    text-align: center;
+}
+h1{
+    color: cornsilk;
+    font-size: 1.5em;
 }
 
+.main{
+    
+}
+.main-wrapper{
+    position: relative;
+    background-color: rgba(246, 246, 246, 0.719);
+    border-radius: 10px;
+    margin-top: 5vh;
+    box-shadow: 2px 2px 5px black;
+    
+}
+.electricidad{
+    
+}
 
 .electricidad-interior{
-    border: 2px solid red;
-}
-.agua-interior{
-    border: 2px solid blue;
+    padding: 20px;
 }
 
-.wrapper{
-    display: contents;
+.forma{
+    padding: 10px;
+}
+
+.title{
+    padding: 10px;
+}
+.card-body{
+
+}
+.col-l-6{
+    text-align: right;
+}
+.inputs-wrapper{
+    display: block;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+label{
+}
+.thebutton{
+    text-align: right;
 }
 input{
+    background-color: transparent;
+    border:none;
+    border-bottom: black 2px solid;
+    text-align: right;
     margin: 5px;
-    padding: 5px;
-    width: 100%;
+    width: 80px;
+    padding: 0;
 }
-.btn{
-    width: 100%;
-}
+
 button{
     margin: 5px;
 }
 .consumoInfo{
-    border: 2px solid red;
+    background-color: transparent;
+    padding: 10px;
     text-align: right;
-}
-
-thead{
-   text-align: center;
-}
-
-.row{
-    text-align: right;
-}
-
-@media (min-width:1024){
     
+}
+
+footer{
+position: fixed;
+bottom: 0;
+width: 100%;
+color: cornsilk;
+text-align: center;
+}
+.lista-tabla{
+    list-style: none;
+    display: inline;
+    margin: auto;
+}
+
+@media(min-width:1024px){
+    .name-app{
+        margin-top: 200px;
+    }
+    .inputs-wrapper{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .consumoInfo{
+        justify-content: space-evenly;
+        
+    }
+    .h1{
+        color: cornsilk;
+        font-size: 4em;
+    }
 }

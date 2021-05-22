@@ -12,7 +12,7 @@
 <body>
 <header>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a href="#" class="navbar-brand">Brand</a>
+        <a href="#" class="navbar-brand">CalElec</a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,62 +24,82 @@
                 <a href="#" class="nav-item nav-link">Messages</a>
                 <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>
             </div>
-            <div class="navbar-nav ml-auto">
-                <a href="#" class="nav-item nav-link">Login</a>
-            </div>
+           
         </div>
     </nav>
 </header>
 <section class="container main">
-        <div class="main-wrapper row">
+<div class="container name-app tx-center">
+    <h1> Calculadora gasto electrico</h1>
+</div>
+    
+        <div class="main-wrapper">
+        
+        
             <!-- calculo de electricidad -->
-            <div class="electricidad  col-md-6">
-                <div class="electricidad-interior card">
+            <div class="electricidad">
+                <div class="electricidad-interior container">
                     <!-- Form inputs for math electricidad -->
-                    <form action="submit">
-                        <h3>Electricidad</h3>
-                        <div class="card-body">
-                            <div class="wrapper container">
-                                <input type="number" name="" id="kwanterior" placeholder="Lectura Anterior">
-                                <input type="number" name="" id="kwactual" placeholder="Lectura Actual">
-                                <button class="btn btn-primary" type="submit">calcular</button>
+                    <form class="forma" action="" id="consumoFormElec">
+                        <div class="title container text-xl-center">
+                            <h5>Calcule su consumo</h5>
+                        </div>
+                        
+                        <div class="container">
+                            <div class="inputs-wrapper row">
+                            <div class="col-l-6">
+                                <label for="kwanterior"><b>Lectura Anterior</b> </label>
+                                <input type="number" name="kwanterior" id="kwanterior" placeholder="0">
+                            </div>
+                                <div class="col-l-6 ">
+                                    <label for="kwactual"><b> Lectura Actual</b></label>
+                                <input type="number"  name="kwactual" id="kwactual" placeholder="0">
+                                </div>
+                                <div class="thebutton">
+                                    <button class="btn btn-primary" type="submit">calcular</button>
+                                </div>
+                                
                             </div>
                         </div>
                     </form>
-                    <div class="consumoInfo container">
-                        <label for=""> Cantidad de KW consumidos: <span id="cantkwconsumido">{_}</span></label><br>
-                        <label for=""> El total a pagar es de: <span id="importeelectricidad">{_}</span></label>
-                    </div>                   
                    
+                    <div class="tabla d-flex">
+                        <div class="deslose-wrapper">
+                            consum
+                            <ul class="lista-tabla" id="deslose">
+                            </ul>
+                        </div>
+                        
+                        <div class="precio-wrapper" >
+                        precios
+                            <ul class="lista-tabla"  id="precio">
+                            </ul>
+                        </div>
+                        
+                        <div class="importe-wrapper" >
+                            importe
+                                <ul class="lista-tabla"  id="importe">
+                                </ul>
+                            </div>
+                        
+                    </div>
+                    
+                    <div class="container">
+                        <div class="consumoInfo d-sm-block d-md-flex">
+                            <label for="" id="resultconsumidos"> <b>KW consumidos: </b>  </label><br>
+                            <label for="" id="mony"> <b>El total a pagar:$ </b></label>
+                        </div> 
+                       </div>
                 </div>
             </div>
-            
-             <!-- calculo de agua -->
-        <div class="agua  col-md-6">
-            <div class="agua-interior card">
-                <form action="submit">
-                    <h3>Agua</h3>
-                    <div class="card-body">
-                        <div class="wrapper container">
-                            <input type="number" name="" id="kwanterior" placeholder="Lectura Anterior">
-                            <input type="number" name="" id="kwactual" placeholder="Lectura Actual">
-                            <button class="btn btn-primary">calcular</button>
-                        </div>
-                    </div>
-                </form>
-                <div class="consumoInfo container">
-                    <label for=""> Cantidad de M3 consumidos: <span id="cantaguaconsumido">{_}</span></label><br>
-                    <label for=""> El total a pagar es de: <span id="importeagua">{_}</span></label>
-                </div> 
-                
-            </div>
-            
-        </div>
         </div>
   
 </section>
 
-
+<footer class="footer bg-dark">
+    
+    <span>Alian Medina 2021 &copy</span>
+</footer>
     
     
     <script src="./script.js"></script>
