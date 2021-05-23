@@ -21,8 +21,6 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
                 <a href="#" class="nav-item nav-link active">Home</a>
-                <a href="#" class="nav-item nav-link">Profile</a>
-                <a href="#" class="nav-item nav-link">Messages</a>
                 <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>
             </div>
            
@@ -57,45 +55,43 @@
                                 <input type="number"  name="kwactual" id="kwactual" placeholder="0">
                                 </div>
                                 <div class="thebutton">
-                                    <button class="btn btn-primary" type="submit">calcular</button>
+                                    <button class="btn btn-primary"  type="submit">calcular</button>
                                 </div>
                                 
                             </div>
                         </div>
                     </form>
-                   <!-- Listas dinamicas de consumo gasto e importe -->
-                    <div class="tabla d-flex">
-                        <div class="deslose-wrapper">
-                            consum
-                            <ul class="lista-tabla" id="deslose">
-                            </ul>
-                        </div>
-                        
-                        <div class="precio-wrapper" >
-                        precios
-                            <ul class="lista-tabla"  id="precio">
-                            </ul>
-                        </div>
-                        
-                        <div class="importe-wrapper" >
-                            importe
-                                <ul class="lista-tabla"  id="importe">
-                                </ul>
-                            </div>
+                    
+                   <!-- Tabla dinamica de consumo gasto e importe -->
+                    <div class="tabla container">
+                    
+                        <table class=" table-dark" id="factura"></table>
                         
                     </div>
+                    
                     <!-- Labels para cantidades -->
                     <div class="container">
-                        <div class="consumoInfo d-sm-block d-md-flex">
-                            <label for="" id="resultconsumidos"> <b>KW consumidos: </b>  </label><br>
-                            <label for="" id="mony"> <b>El total a pagar:$ </b></label>
+                        <div class="consumoInfo" id="consumoInfo">
+                            <!-- <label for="" id="resultconsumidos"> <b>Consumidos:</b></label>
+                            <label for="" id="mony"> <b>A pagar:$ </b></label> -->
                         </div> 
                        </div>
                 </div>
             </div>
+            
         </div>
   
 </section>
+
+<div class="row" id="tabla">
+    <div class="col-sm-4" id="consumo"></div>
+    <div class="col-sm-4" id="precio"></div>
+    <div class="col-sm-4" id="importe"></div>
+</div>
+
+
+
+
 
 <footer class="footer bg-dark">
     
