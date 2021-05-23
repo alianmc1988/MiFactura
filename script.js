@@ -102,8 +102,7 @@ function renderTabla(arr){
     document.getElementById("factura").innerHTML = tb;
     
 }
-
-
+//<A>
 
 
 
